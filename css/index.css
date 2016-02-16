@@ -1,0 +1,550 @@
+html,body,h1,h2,h3,h4,h5,h6,a,ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bg-image { position: fixed; top: 0; left: 0; background-image: url(../images/banner01.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; width: 100%; height: 100%; z-index: -1; }
+
+*{
+  box-sizing: border-box;
+}
+.aa{
+  border:1px solid #e6f1df;
+  padding: 20px;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(108,182,118,0.8);
+  cursor: pointer;
+}
+.aa img{
+  width: 100%;
+}
+.aa img:hover{
+  transform: scale(1.2) rotate(360deg);
+  transition: transform 3s ease;
+}
+.zuopm{
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  background:white;
+  display: none;
+}
+.zuopm:hover{
+  color: white;
+  background: #6cb670;
+}
+a {
+  transition: all 0.2s ease-in-out;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+   color: #000;
+   font-weight: bolder;
+   font-size: 24px;
+}
+#services, #portfolio, #about, #contact {
+  padding: 100px 0;
+}
+
+/*------------------------------------------------------
+	头部
+--------------------------------------------------------*/
+.main-header {
+  position: fixed;
+  top:0px;
+  width: 100%;
+  z-index: 111;
+  padding: 20px 0;
+  background: #2f3238;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ;
+  transition: all 0.4s ease-in-out;
+}
+.main-header .logo {
+  margin-top: 5px;
+}
+.main-header .logo h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-header .logo h1 a {
+  color:#6cb670;
+}
+.main-header .menu {
+  margin-top: 12px;
+}
+.main-header .menu ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.main-header .menu ul li a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+.main-header .menu ul li a.current {
+  background: #474847;
+  color: #6cb670;
+}
+
+.main-header-shrink {
+  padding: 25px 0;
+  top: 0;
+}
+
+.responsive-menu {
+  position: relative;
+  top: -32px;
+}
+.responsive-menu .toggle-menu {
+  font-size: 24px;
+  color: #6cb670;
+}
+.responsive-menu .menu {
+  display: none;
+  position: absolute;
+  top: 52px;
+  width: 100%;
+  background-color: #474847;
+}
+.responsive-menu .menu ul li {
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid #6cb670;
+  margin: 0;
+}
+.responsive-menu .menu ul li:last-child {
+  border-bottom: 0;
+}
+.responsive-menu .menu ul li a {
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.responsive-menu .menu ul li a.current {
+  background-color: #444444;
+}
+
+/*------------------------------------------------------
+	banner
+--------------------------------------------------------*/
+.title-section {
+  margin-bottom: 80px;
+}
+.title-section h2 {
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+.title-section span {
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #474847;
+  margin: 0 auto;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.mainBtn {
+  background-color: #474847;
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.mainBtn:hover {
+    background-color: #474847;
+}
+#wo{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: -100px;
+  border-radius: 50%
+}
+#wo2{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: -100px;
+  border-radius: 50%
+}
+/*------------------------------------------------------
+	项目经验
+--------------------------------------------------------*/
+#services{
+  background: #fff;
+}
+#services .service-item .service-header {
+  padding-bottom: 20px;
+  clear: both;
+}
+#services .service-item .service-header i {
+  color: #6cb670;
+  font-size: 24px;
+  float: left;
+  margin-right: 25px;
+}
+#services .service-item .service-header h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*------------------------------------------------------
+	ps/ai
+--------------------------------------------------------*/
+#portfolio {
+  padding-bottom: 80px;
+  /*margin-top: 100px;*/
+  background: #3d3f3f;
+}
+#portfolio .title-section h2 {
+  color: white;
+}
+#portfolio .portfolio-thumb {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+#portfolio .portfolio-thumb img {
+  width: 100%;
+  height: auto;
+}
+#portfolio .portfolio-thumb .overlay {
+  opacity: 0;
+  visibility: visible;
+  background: rgba(108, 182, 112, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#portfolio .portfolio-thumb .overlay .inner {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+#portfolio .portfolio-thumb .overlay .inner h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#portfolio .portfolio-thumb .overlay .inner h4 a {
+  color: white;
+}
+#portfolio .portfolio-thumb .overlay .inner span {
+  font-weight: 300;
+  color: white;
+}
+#portfolio .portfolio-thumb:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*------------------------------------------------------
+	js作品
+--------------------------------------------------------*/
+#about{
+  background: #fff;
+}
+#about .progess-bars li .progress {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #e6e6e6;
+  height: 30px;
+  margin-bottom: 15px;
+}
+#about .progess-bars li .progress-bar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  line-height: 30px;
+  background: #6cbc70;
+  text-transform: uppercase;
+}
+#about .our-team {
+  margin-top: 80px;
+}
+#about .our-team .team-member {
+  overflow: hidden;
+}
+#about .our-team .team-member .member-img {
+  width: 100%;
+  position: relative;
+}
+#about .our-team .team-member .member-img img {
+  width: 100%;
+  height: auto;
+}
+#about .our-team .team-member .member-img .overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#about .our-team .team-member .member-img .overlay .social {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#about .our-team .team-member .member-img .overlay .social li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+#about .our-team .team-member .member-img .overlay .social li a {
+  display: block;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+#about .our-team .team-member .member-img .overlay .social li a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#about .our-team .team-member .member-img:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+#about .our-team .team-member .inner-content {
+  width: 100%;
+  background: whitesmoke;
+  border: 1px solid #d6d6d6;
+  border-top: 0;
+  padding: 20px;
+}
+#about .our-team .team-member .inner-content h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6cb670;
+  margin-bottom: 10px;
+}
+#about .our-team .team-member .inner-content span {
+  color: #9d9d9d;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/*------------------------------------------------------
+	个人简介
+--------------------------------------------------------*/
+#contact h2{
+  color: #fff;
+}
+#contact span{
+  background: #fff;
+}
+.zpz li{
+  font-size: 20px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.zpz li:hover{
+  color: #6cb670;
+}
+.css2{
+  width: 100%;
+}
+.flexslider {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.flex-direction-nav a {
+  color: #444444;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: -20px 0 0 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.flex-caption {
+  position: absolute;
+  top: 39%;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+  color: white;
+}
+.flex-caption h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 45px;
+}
+.flex-caption p {
+  font-size: 18px;
+  font-family: 'Droid Serif', serif;
+  line-height: 28px;
+}
+.flex-caption span {
+  background: url(../images/slider-dec.png) no-repeat;
+  width: 60px;
+  height: 9px;
+  display: block;
+  margin: 30px auto;
+}
+
+/*------------------------------------------------------
+	底部
+--------------------------------------------------------*/
+.site-footer {
+  background-color: #2f3238;
+  color: white;
+  padding: 10px 0;
+}
+.site-footer p {
+  margin-top: 10px;
+}
+.site-footer a {
+  color: white;
+  text-align: center;
+  display: block;
+}
+.site-footer .go-top {
+  margin-top: 10px;
+  float: right;
+  text-transform: uppercase;
+}
+.site-footer .go-top i:hover{
+  color: #6cb670;
+}
+.site-footer .go-top a:hover{
+  color: #6cb670;
+}
+.site-footer .go-top i {
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .flexslider {
+    margin-top: 100px;
+  }
+  .aa{
+    border:1px solid black;
+    height: auto;
+  }
+
+  .main-header {
+    padding: 8px 0;
+  }
+  .main-header .logo {
+    margin-top: 20px;
+  }
+  .main-header .logo a{
+    font-size: 30px;
+  }
+  .service-item, .team-member {
+    margin-bottom: 50px;
+  }
+
+  .our-skills {
+    margin-top: 60px;
+  }
+
+  .flex-caption {
+    top: 20%;
+  }
+  .flex-caption h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .flex-caption p {
+    font-size: 14px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .left-header, .right-header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .flex-caption {
+    display: none !important;
+  }
+  .contact-form {
+    margin-bottom: 60px;
+  }
+
+  .main-header {
+    height: 60px;
+  }
+  .main-header .logo {
+    margin-top: -6px;
+  }
+  .main-header .logo a{
+    font-size: 24px;
+  }
+
+  .flexslider {
+    margin-top: 60px;
+  }
+  .responsive-menu .menu {
+    width: 100%;
+    top: 32px;
+  }
+  .aa{
+    border:1px solid black;
+    height: auto;
+  }
+}
+
